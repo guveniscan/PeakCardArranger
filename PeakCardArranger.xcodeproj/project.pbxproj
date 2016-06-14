@@ -9,19 +9,117 @@
 /* Begin PBXBuildFile section */
 		025F5E851D0985E400E11329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F5E841D0985E400E11329 /* AppDelegate.swift */; };
 		025F5E871D0985E400E11329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F5E861D0985E400E11329 /* ViewController.swift */; };
-		025F5E8A1D0985E400E11329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025F5E881D0985E400E11329 /* Main.storyboard */; };
 		025F5E8C1D0985E400E11329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025F5E8B1D0985E400E11329 /* Assets.xcassets */; };
 		025F5E8F1D0985E400E11329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025F5E8D1D0985E400E11329 /* LaunchScreen.storyboard */; };
+		025F5E991D0A0CC400E11329 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F5E981D0A0CC400E11329 /* Card.swift */; };
+		025F5E9B1D0A118F00E11329 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F5E9A1D0A118F00E11329 /* Style.swift */; };
+		0270A06F1D0A2828003FA6B0 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0270A0621D0A27F5003FA6B0 /* SnapKit.framework */; };
+		0270A0701D0A2828003FA6B0 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0270A0621D0A27F5003FA6B0 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0270A0751D0A2925003FA6B0 /* SnapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0270A0621D0A27F5003FA6B0 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0270A0771D0ADB7E003FA6B0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0761D0ADB7E003FA6B0 /* CardView.swift */; };
+		0270A0791D0AE0DF003FA6B0 /* CardHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A0781D0AE0DF003FA6B0 /* CardHolder.swift */; };
+		0270A07B1D0B6645003FA6B0 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A07A1D0B6645003FA6B0 /* CardDeck.swift */; };
+		0270A07E1D0DF2FE003FA6B0 /* CardOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270A07D1D0DF2FE003FA6B0 /* CardOrganizer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0270A0611D0A27F5003FA6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
+		0270A0631D0A27F5003FA6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537DCE921C35CC8800B5B899;
+			remoteInfo = "SnapKit tvOS";
+		};
+		0270A0651D0A27F5003FA6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB37A1AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX";
+		};
+		0270A0671D0A27F5003FA6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit iOS Tests";
+		};
+		0270A0691D0A27F5003FA6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537DCEAF1C35D90A00B5B899;
+			remoteInfo = "SnapKit tvOS Tests";
+		};
+		0270A06B1D0A27F5003FA6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB3841AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX Tests";
+		};
+		0270A06D1D0A27F5003FA6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56A0DC091C859E30005973AB;
+			remoteInfo = "Example-iOS";
+		};
+		0270A0711D0A2828003FA6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0270A0731D0A2828003FA6B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0270A0701D0A2828003FA6B0 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0270A0741D0A28F6003FA6B0 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0270A0751D0A2925003FA6B0 /* SnapKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		025F5E811D0985E400E11329 /* PeakCardArranger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeakCardArranger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025F5E841D0985E400E11329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		025F5E861D0985E400E11329 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		025F5E891D0985E400E11329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		025F5E8B1D0985E400E11329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		025F5E8E1D0985E400E11329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		025F5E901D0985E400E11329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025F5E981D0A0CC400E11329 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		025F5E9A1D0A118F00E11329 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
+		0270A0761D0ADB7E003FA6B0 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0270A0781D0AE0DF003FA6B0 /* CardHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHolder.swift; sourceTree = "<group>"; };
+		0270A07A1D0B6645003FA6B0 /* CardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
+		0270A07D1D0DF2FE003FA6B0 /* CardOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardOrganizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0270A06F1D0A2828003FA6B0 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +137,7 @@
 		025F5E781D0985E300E11329 = {
 			isa = PBXGroup;
 			children = (
+				0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */,
 				025F5E831D0985E400E11329 /* PeakCardArranger */,
 				025F5E821D0985E400E11329 /* Products */,
 			);
@@ -56,12 +156,31 @@
 			children = (
 				025F5E841D0985E400E11329 /* AppDelegate.swift */,
 				025F5E861D0985E400E11329 /* ViewController.swift */,
-				025F5E881D0985E400E11329 /* Main.storyboard */,
+				025F5E981D0A0CC400E11329 /* Card.swift */,
+				0270A07A1D0B6645003FA6B0 /* CardDeck.swift */,
+				0270A0761D0ADB7E003FA6B0 /* CardView.swift */,
+				0270A0781D0AE0DF003FA6B0 /* CardHolder.swift */,
+				0270A07D1D0DF2FE003FA6B0 /* CardOrganizer.swift */,
+				025F5E9A1D0A118F00E11329 /* Style.swift */,
 				025F5E8B1D0985E400E11329 /* Assets.xcassets */,
 				025F5E8D1D0985E400E11329 /* LaunchScreen.storyboard */,
 				025F5E901D0985E400E11329 /* Info.plist */,
 			);
 			path = PeakCardArranger;
+			sourceTree = "<group>";
+		};
+		0270A0581D0A27F5003FA6B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0270A0621D0A27F5003FA6B0 /* SnapKit.framework */,
+				0270A0641D0A27F5003FA6B0 /* SnapKit.framework */,
+				0270A0661D0A27F5003FA6B0 /* SnapKit.framework */,
+				0270A0681D0A27F5003FA6B0 /* SnapKit iOS Tests.xctest */,
+				0270A06A1D0A27F5003FA6B0 /* SnapKit tvOS Tests.xctest */,
+				0270A06C1D0A27F5003FA6B0 /* SnapKit OSX Tests.xctest */,
+				0270A06E1D0A27F5003FA6B0 /* Example-iOS.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +193,13 @@
 				025F5E7D1D0985E400E11329 /* Sources */,
 				025F5E7E1D0985E400E11329 /* Frameworks */,
 				025F5E7F1D0985E400E11329 /* Resources */,
+				0270A0731D0A2828003FA6B0 /* Embed Frameworks */,
+				0270A0741D0A28F6003FA6B0 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0270A0721D0A2828003FA6B0 /* PBXTargetDependency */,
 			);
 			name = PeakCardArranger;
 			productName = PeakCardArranger;
@@ -110,12 +232,70 @@
 			mainGroup = 025F5E781D0985E300E11329;
 			productRefGroup = 025F5E821D0985E400E11329 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0270A0581D0A27F5003FA6B0 /* Products */;
+					ProjectRef = 0270A0571D0A27F5003FA6B0 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				025F5E801D0985E400E11329 /* PeakCardArranger */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0270A0621D0A27F5003FA6B0 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 0270A0611D0A27F5003FA6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0270A0641D0A27F5003FA6B0 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 0270A0631D0A27F5003FA6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0270A0661D0A27F5003FA6B0 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 0270A0651D0A27F5003FA6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0270A0681D0A27F5003FA6B0 /* SnapKit iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit iOS Tests.xctest";
+			remoteRef = 0270A0671D0A27F5003FA6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0270A06A1D0A27F5003FA6B0 /* SnapKit tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit tvOS Tests.xctest";
+			remoteRef = 0270A0691D0A27F5003FA6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0270A06C1D0A27F5003FA6B0 /* SnapKit OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit OSX Tests.xctest";
+			remoteRef = 0270A06B1D0A27F5003FA6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0270A06E1D0A27F5003FA6B0 /* Example-iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Example-iOS.app";
+			remoteRef = 0270A06D1D0A27F5003FA6B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		025F5E7F1D0985E400E11329 /* Resources */ = {
@@ -124,7 +304,6 @@
 			files = (
 				025F5E8F1D0985E400E11329 /* LaunchScreen.storyboard in Resources */,
 				025F5E8C1D0985E400E11329 /* Assets.xcassets in Resources */,
-				025F5E8A1D0985E400E11329 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,21 +315,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				025F5E871D0985E400E11329 /* ViewController.swift in Sources */,
+				0270A07E1D0DF2FE003FA6B0 /* CardOrganizer.swift in Sources */,
 				025F5E851D0985E400E11329 /* AppDelegate.swift in Sources */,
+				025F5E991D0A0CC400E11329 /* Card.swift in Sources */,
+				0270A0791D0AE0DF003FA6B0 /* CardHolder.swift in Sources */,
+				0270A07B1D0B6645003FA6B0 /* CardDeck.swift in Sources */,
+				025F5E9B1D0A118F00E11329 /* Style.swift in Sources */,
+				0270A0771D0ADB7E003FA6B0 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		025F5E881D0985E400E11329 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				025F5E891D0985E400E11329 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		0270A0721D0A2828003FA6B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SnapKit iOS";
+			targetProxy = 0270A0711D0A2828003FA6B0 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		025F5E8D1D0985E400E11329 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -199,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -239,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -251,7 +436,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PeakCardArranger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guven.PeakCardArranger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,7 +449,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PeakCardArranger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guven.PeakCardArranger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +477,7 @@
 				025F5E951D0985E400E11329 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
