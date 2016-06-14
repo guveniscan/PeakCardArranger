@@ -105,6 +105,10 @@ class ViewController: UIViewController, CardViewDelegate {
         return view.convertPoint(firstButtonCenter, toView: cardHolder)
     }
     
+    func cardsDidSwap(cardIndex1: Int, cardIndex2: Int) {
+        currentCards.swapElements(cardIndex1, index2: cardIndex2)
+    }
+    
     func calculateButtonMargin(numberOfButtons : Int) -> CGFloat {
         guard numberOfButtons > 1 else {
             return 0.0

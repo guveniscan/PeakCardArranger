@@ -11,6 +11,7 @@ import UIKit
 protocol CardViewDelegate {
     func cardDealingAnimationPoint() -> CGPoint
     func sizeForCard(inHolder holder: CardHolder, atIndex index : Int) -> CGSize
+    func cardsDidSwap(cardIndex1 : Int, cardIndex2 : Int)
 }
 
 extension Array {
@@ -41,6 +42,7 @@ class CardHolder : UIView {
             return cardSpanAngle * 2 / CGFloat(numberOfCards - 1)
         }
     }
+    
     //Array of card views at hand
     var currentCardViews : [UIView] = []
     
@@ -192,6 +194,7 @@ class CardHolder : UIView {
                     card.center = CGPointMake(self.center.x + tempCenter.x, self.frame.size.height / 2 + tempCenter.y)
                     card.transform = transformationOfCard(atIndex: newIndex)
                     currentCardViews.swapElements(newIndex, index2: newIndex + 1)
+                    delegate?.cardsDidSwap(newIndex, cardIndex2: newIndex + 1)
                 }
                 else {
                     break
@@ -207,6 +210,7 @@ class CardHolder : UIView {
                     card.center = CGPointMake(self.center.x + tempCenter.x, self.frame.size.height / 2 + tempCenter.y)
                     card.transform = transformationOfCard(atIndex: newIndex)
                     currentCardViews.swapElements(newIndex, index2: newIndex - 1)
+                    delegate?.cardsDidSwap(newIndex, cardIndex2: newIndex - 1)
                 }
                 else {
                     break
